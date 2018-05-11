@@ -192,8 +192,35 @@ public class BonsaiColorTracking : MonoBehaviour
     // Action that will be run in the main thread.
     void UpdateCubesPos()
     {
+        if (GreenCube.transform.position == GreenPos)
+        {
+            GreenCube.GetComponent<MeshRenderer>().enabled = false;
+        }
+        else
+        {
+            GreenCube.GetComponent<MeshRenderer>().enabled = true;
+        }
         GreenCube.transform.position = GreenPos;
+
+
+        if (RedCube.transform.position == GreenPos)
+        {
+            RedCube.GetComponent<MeshRenderer>().enabled = false;
+        }
+        else
+        {
+            RedCube.GetComponent<MeshRenderer>().enabled = true;
+        }
         RedCube.transform.position = RedPos;
+
+        if (BlueCube.transform.position == GreenPos)
+        {
+            BlueCube.GetComponent<MeshRenderer>().enabled = false;
+        }
+        else
+        {
+            BlueCube.GetComponent<MeshRenderer>().enabled = true;
+        }
         BlueCube.transform.position = BluePos;
     }
 

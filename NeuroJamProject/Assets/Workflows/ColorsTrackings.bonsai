@@ -29,15 +29,15 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="q1:HsvThreshold">
           <q1:Lower>
-            <q1:Val0>132</q1:Val0>
-            <q1:Val1>118</q1:Val1>
-            <q1:Val2>24</q1:Val2>
+            <q1:Val0>100</q1:Val0>
+            <q1:Val1>140</q1:Val1>
+            <q1:Val2>40</q1:Val2>
             <q1:Val3>0</q1:Val3>
           </q1:Lower>
           <q1:Upper>
-            <q1:Val0>119</q1:Val0>
-            <q1:Val1>167</q1:Val1>
-            <q1:Val2>76</q1:Val2>
+            <q1:Val0>125</q1:Val0>
+            <q1:Val1>157</q1:Val1>
+            <q1:Val2>99</q1:Val2>
             <q1:Val3>255</q1:Val3>
           </q1:Upper>
         </Combinator>
@@ -48,15 +48,15 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="q1:HsvThreshold">
           <q1:Lower>
-            <q1:Val0>30</q1:Val0>
-            <q1:Val1>0</q1:Val1>
-            <q1:Val2>200</q1:Val2>
+            <q1:Val0>90</q1:Val0>
+            <q1:Val1>87</q1:Val1>
+            <q1:Val2>155</q1:Val2>
             <q1:Val3>0</q1:Val3>
           </q1:Lower>
           <q1:Upper>
             <q1:Val0>119</q1:Val0>
-            <q1:Val1>50</q1:Val1>
-            <q1:Val2>255</q1:Val2>
+            <q1:Val1>100</q1:Val1>
+            <q1:Val2>186</q1:Val2>
             <q1:Val3>255</q1:Val3>
           </q1:Upper>
         </Combinator>
@@ -70,15 +70,15 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="q1:HsvThreshold">
           <q1:Lower>
-            <q1:Val0>240</q1:Val0>
-            <q1:Val1>144</q1:Val1>
-            <q1:Val2>40</q1:Val2>
+            <q1:Val0>210</q1:Val0>
+            <q1:Val1>155</q1:Val1>
+            <q1:Val2>45</q1:Val2>
             <q1:Val3>0</q1:Val3>
           </q1:Lower>
           <q1:Upper>
             <q1:Val0>255</q1:Val0>
             <q1:Val1>186</q1:Val1>
-            <q1:Val2>76</q1:Val2>
+            <q1:Val2>70</q1:Val2>
             <q1:Val3>255</q1:Val3>
           </q1:Upper>
         </Combinator>
@@ -127,6 +127,51 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="q1:LargestBinaryRegion" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:MorphologicalOperator">
+          <q1:Size>
+            <q1:Width>3</q1:Width>
+            <q1:Height>3</q1:Height>
+          </q1:Size>
+          <q1:Anchor>
+            <q1:X>1</q1:X>
+            <q1:Y>1</q1:Y>
+          </q1:Anchor>
+          <q1:Shape>Rectangle</q1:Shape>
+          <q1:Iterations>2</q1:Iterations>
+          <q1:Operation>Dilate</q1:Operation>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:MorphologicalOperator">
+          <q1:Size>
+            <q1:Width>3</q1:Width>
+            <q1:Height>3</q1:Height>
+          </q1:Size>
+          <q1:Anchor>
+            <q1:X>1</q1:X>
+            <q1:Y>1</q1:Y>
+          </q1:Anchor>
+          <q1:Shape>Rectangle</q1:Shape>
+          <q1:Iterations>2</q1:Iterations>
+          <q1:Operation>Dilate</q1:Operation>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:MorphologicalOperator">
+          <q1:Size>
+            <q1:Width>3</q1:Width>
+            <q1:Height>3</q1:Height>
+          </q1:Size>
+          <q1:Anchor>
+            <q1:X>1</q1:X>
+            <q1:Y>1</q1:Y>
+          </q1:Anchor>
+          <q1:Shape>Rectangle</q1:Shape>
+          <q1:Iterations>2</q1:Iterations>
+          <q1:Operation>Dilate</q1:Operation>
+        </Combinator>
       </Expression>
     </Nodes>
     <Edges>
@@ -177,7 +222,7 @@
       </Edge>
       <Edge>
         <From>7</From>
-        <To>13</To>
+        <To>20</To>
         <Label>Source1</Label>
       </Edge>
       <Edge>
@@ -187,7 +232,7 @@
       </Edge>
       <Edge>
         <From>9</From>
-        <To>15</To>
+        <To>19</To>
         <Label>Source1</Label>
       </Edge>
       <Edge>
@@ -202,7 +247,7 @@
       </Edge>
       <Edge>
         <From>12</From>
-        <To>16</To>
+        <To>21</To>
         <Label>Source1</Label>
       </Edge>
       <Edge>
@@ -235,6 +280,21 @@
         <To>10</To>
         <Label>Source1</Label>
       </Edge>
+      <Edge>
+        <From>19</From>
+        <To>15</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>20</From>
+        <To>13</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>21</From>
+        <To>16</To>
+        <Label>Source1</Label>
+      </Edge>
     </Edges>
   </Workflow>
   <ExtensionTypes>
@@ -245,5 +305,6 @@
     <Type>Bonsai.Vision.HsvThreshold, Bonsai.Vision, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null</Type>
     <Type>Bonsai.Vision.FindContours, Bonsai.Vision, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null</Type>
     <Type>Bonsai.Vision.LargestBinaryRegion, Bonsai.Vision, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Vision.MorphologicalOperator, Bonsai.Vision, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null</Type>
   </ExtensionTypes>
 </WorkflowBuilder>

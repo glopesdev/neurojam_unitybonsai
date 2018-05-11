@@ -200,6 +200,12 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: BinaryInv
       m_Image: {fileID: 0}
+    - m_Text: Truncate
+      m_Image: {fileID: 0}
+    - m_Text: ToZero
+      m_Image: {fileID: 0}
+    - m_Text: ToZeroInv
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
